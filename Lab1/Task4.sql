@@ -4,4 +4,4 @@
 select "SalesOrderID",
 "ProductID"
 from "Sales"."SalesOrderDetail" 
-where "CarrierTrackingNumber" like '%';
+where "CarrierTrackingNumber" is not null;
